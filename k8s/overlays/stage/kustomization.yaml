@@ -15,4 +15,4 @@ patches:
   - path: hpa-patch.yaml
 images:
   - name: kuberpull/claims-api
-    newTag: stage
+    newTag: 54f7fcbe1d3fb816527fa910fc4db3e0c1063eeb
