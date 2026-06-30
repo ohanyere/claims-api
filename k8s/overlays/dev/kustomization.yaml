@@ -16,4 +16,4 @@ patches:
   - path: quota-patch.yaml
 images:
   - name: kuberpull/claims-api
-    newTag: 0b6bb0b2e9cd5c8acd2320ea5eb19f7df102ae8e
+    newTag: d6a6685dc5801667c7d4847ce56d49366d7f84fe
