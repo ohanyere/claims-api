@@ -1,0 +1,18 @@
+apiVersion: platform.ohanyere.com/v1alpha1
+kind: ObjectBucket
+metadata:
+  name: claims-api-codex-smoke-20260707
+  namespace: claims-api-dev
+  labels:
+    platform.io/team: claims
+    platform.io/cost-center: cc-claims
+    platform.io/environment: dev
+    platform.io/provisioned-by: nexus-platform
+    platform.io/service: claims-api
+spec:
+  compositionRef:
+    name: objectbucket.aws.platform.ohanyere.com
+  parameters:
+    region: us-east-1
+    versioning: true
+    deletionPolicy: Orphan
