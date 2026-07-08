@@ -1,0 +1,19 @@
+apiVersion: platform.ohanyere.com/v1alpha1
+kind: PostgreSQLInstance
+metadata:
+  name: new-postgresql
+  namespace: claims-api-dev
+  labels:
+    platform.io/team: payments
+    platform.io/cost-center: cc-payments
+    platform.io/environment: dev
+    platform.io/provisioned-by: nexus-platform
+    platform.io/service: claims-api
+spec:
+  compositionRef:
+    name: postgresql.aws.platform.ohanyere.com
+  parameters:
+    region: us-east-1
+    storageGB: 20
+    instanceClass: db.t4g.micro
+    deletionPolicy: Orphan
